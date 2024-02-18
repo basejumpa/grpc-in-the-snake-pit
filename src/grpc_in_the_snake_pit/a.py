@@ -1,22 +1,40 @@
-"""Module a: Everything you need to know about the letters."""
+"""All about the letter 'A'."""
 
-__THE_VALUE = "a"
-
-def get():
+class A:
     """
-    This function returns the string "a".
-
-    Returns:
-        str: The string "a".
+    A class representing an object with a value.
     """
-    return __THE_VALUE
 
+    def __init__(self, value=0):
+        self.value = value
+        self.a = 5
 
-def set_the_value(value: str):
-    """
-    This function sets the THE_VALUE of the string "a".
+    def get_value(self):
+        """
+        Get the current value of the object.
 
-    Args:
-        THE_VALUE (str): The THE_VALUE to set.
-    """
-    __THE_VALUE = value
+        Returns:
+            The current value.
+        """
+        return self.value
+
+    def set_value(self, new_value):
+        """
+        Set a new value for the object.
+
+        Args:
+            new_value: The new value to set.
+        """
+        if self.a == 5:
+            self.value = new_value
+        else:
+            pass
+
+    def __str__(self):
+        """
+        Return a string representation of the object.
+
+        Returns:
+            A string representation of the object.
+        """
+        return f"A(value={self.value})"
