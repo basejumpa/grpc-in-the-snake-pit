@@ -5,12 +5,9 @@
         "editorconfig.editorconfig",
         "donjayamanne.python-extension-pack",
         "mhutchie.git-graph",
-        "eamodio.gitlens",
         "ms-vscode-remote.remote-containers",
         "ms-python.pylint",
         "ryanluker.vscode-coverage-gutters",
-        "dancheg97.grpc-clicker",
-        "pashkatrick.grpc-client",
         "vscode-icons-team.vscode-icons"
     ]
 }

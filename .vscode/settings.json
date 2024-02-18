@@ -1,16 +1,15 @@
 {
     "files.exclude": {
-            ".venv/": true,
-            ".coverage-dir/": false,
+            ".extensions": true,
+            ".user": true,
             ".pytest_cache/": true,
             "**/*.pyc": {"when": "$(basename).py"},
             "**/__pycache__": true,
-            "Pipfile.lock": true
     },
 
     "editor.minimap.enabled": false,
 
-    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.defaultInterpreterPath": ".venv/Scripts/python",
 
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
