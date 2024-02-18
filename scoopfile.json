@@ -1,0 +1,34 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main"
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions"
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras"
+        }
+    ],
+    "apps": [
+        {
+            "Source": "main",
+            "Name": "7zip"
+        },
+        {
+            "Source": "versions",
+            "Name": "python312"
+        },
+        {
+            "Source": "extras",
+            "Name": "draw.io"
+        },
+        {
+            "Source": "extras",
+            "Name": "plantuml"
+        }
+    ]
+}

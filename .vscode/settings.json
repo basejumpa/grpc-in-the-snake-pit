@@ -1,0 +1,25 @@
+{
+    "pylint.ignorePatterns": [
+        ".coveragerc"
+    ],
+
+    "python.testing.pytestArgs": [
+        "src",
+        "--omit=src/**/test_*.py",
+        "--cov=src/grpc_in_the_snake_pit",
+        "--cov-report=lcov:.coverage-dir/lcov.info",
+        "--cov-report=html:.coverage-dir/html",
+        "--cov-branch",
+        "--cov-fail-under=0",
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+
+    "coverage-gutters.coverageFileNames": [
+        ".coverage-dir/lcov.info"
+    ],
+    "coverage-gutters.showGutterCoverage": true,
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "coverage-gutters.coverageReportFileName": ".coverage-dir/html/*.html"
+}

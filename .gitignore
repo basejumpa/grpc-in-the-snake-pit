@@ -1,0 +1,34 @@
+# In-repository virtual python environment with pipenv
+.venv/
+
+# Local (scope is this repository some kind of "virtual" extensions and user settings)
+# Appear when you (cwd is VS Code project's root) start VS Code as
+# $ code --extensions-dir .extensions/ --user-data-dir .user/ --profile profile-$(whoami) .
+# Advantage: Do not touch your system's VS Code environment. Same as with pipenv
+.extensions/
+.user/
+
+# We don't nail down the versions. Let's always get the hottest stuff.
+# We are here at playground phase of a toy project, so no serious release is coming up.
+# Being-up-to-date beats stability and reproducibility here.
+Pipfile.lock
+
+# Ignore the virtual environment in .venv/ . Keep in mind that the file .venv/.gitkeep is
+# part of the mechanism to have a .venv/ folder with a checkout.
+.venv/
+
+# Compiled python modules.
+*.pyc
+
+# Build folder.
+build/
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# Coverage data
+.coverage
+.coverage-dir/

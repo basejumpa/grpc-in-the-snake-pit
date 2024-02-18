@@ -1,0 +1,19 @@
+{
+    "name": "python-development",
+    "build": { "dockerfile": "Dockerfile" },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mhutchie.git-graph",
+                "ryanluker.vscode-coverage-gutters",
+                "EditorConfig.EditorConfig",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "george-alisson.html-preview-vscode",
+                "donjayamanne.python-extension-pack",
+                "vscode-icons-team.vscode-icons",
+                "njpwerner.autodocstring"
+            ]
+        }
+    }
+}

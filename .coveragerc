@@ -1,0 +1,11 @@
+[run]
+include =
+    src/
+
+omit =
+    src/**/test_*.py
+
+branch = True
+
+[html]
+directory = .coverage-dir/html
