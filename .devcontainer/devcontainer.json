@@ -12,7 +12,9 @@
                 "george-alisson.html-preview-vscode",
                 "donjayamanne.python-extension-pack",
                 "vscode-icons-team.vscode-icons",
-                "njpwerner.autodocstring"
+                "njpwerner.autodocstring",
+                "ms-python.pylint",
+                "eamodio.gitlens"
             ]
         }
     }
