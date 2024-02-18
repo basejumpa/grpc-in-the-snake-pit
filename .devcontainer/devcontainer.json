@@ -14,7 +14,8 @@
                 "vscode-icons-team.vscode-icons",
                 "njpwerner.autodocstring",
                 "ms-python.pylint",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "ms-vscode.live-server"
             ]
         }
     }

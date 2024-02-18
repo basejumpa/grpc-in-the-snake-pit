@@ -11,7 +11,6 @@
         "ryanluker.vscode-coverage-gutters",
         "dancheg97.grpc-clicker",
         "pashkatrick.grpc-client",
-        "vscode-icons-team.vscode-icons",
-        "george-alisson.html-preview-vscode"
+        "vscode-icons-team.vscode-icons"
     ]
 }
