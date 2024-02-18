@@ -23,3 +23,22 @@ aman@NB02022 MINGW64 /d/github/grpc-in-the-snake-pit (develop)
 $ rm -rf .venv && rm -f Pipefile.lock && git restore .venv
 $ pipenv install --dev
 ```
+
+
+```bash
+# Generate python code from message definitions in protobuf language
+cd src/grpc_in_the_snake_pit/
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. helloworld.proto
+```
+
+```bash
+# Start server in a shell:
+cd src/grpc_in_the_snake_pit/
+python server.py
+```
+
+```bash
+# Run cöient in another shell:
+cd src/grpc_in_the_snake_pit/
+python client.py
+```
