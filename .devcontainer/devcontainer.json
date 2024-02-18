@@ -1,8 +1,6 @@
 {
-    "name": "python-development",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+    "postStartCommand": "pip install -r requirements.txt && pipenv install --dev",
     "customizations": {
         "vscode": {
             "extensions": [
