@@ -1,4 +1,5 @@
 from concurrent import futures
+import logging
 import grpc
 from grpc_in_the_snake_pit import helloworld_pb2
 from grpc_in_the_snake_pit import helloworld_pb2_grpc
@@ -20,4 +21,5 @@ def serve():
     server.wait_for_termination()
 
 if __name__ == '__main__':
+    logging.basicConfig()
     serve()
