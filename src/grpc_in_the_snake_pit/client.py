@@ -1,6 +1,6 @@
 import grpc
-import helloworld_pb2
-import helloworld_pb2_grpc
+from grpc_in_the_snake_pit import helloworld_pb2
+from grpc_in_the_snake_pit import helloworld_pb2_grpc
 
 def run():
     # Connect to server

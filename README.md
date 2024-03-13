@@ -27,18 +27,18 @@ $ pipenv install --dev
 
 ```bash
 # Generate python code from message definitions in protobuf language
-cd src/grpc_in_the_snake_pit/
+cd src
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. helloworld.proto
 ```
 
 ```bash
 # Start server in a shell:
-cd src/grpc_in_the_snake_pit/
-python server.py
+cd src
+python -m grpc_in_the_snake_pit.server
 ```
 
 ```bash
 # Run cöient in another shell:
-cd src/grpc_in_the_snake_pit/
-python client.py
+cd src
+python -m grpc_in_the_snake_pit.client
 ```
