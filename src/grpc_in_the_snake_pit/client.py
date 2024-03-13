@@ -9,7 +9,7 @@ def run():
 
         # Synchronous call
         response = stub.SayHello(helloworld_pb2.HelloRequest(name='World'))
-        print("Greeter client received: " + response.message)
+        print(f"Call SayHello(\"World\") returned \"{response.message}\"")
 
         # Asynchronous call
         # async for response in stub.SayHelloAsync(helloworld_pb2.HelloRequest(name='Async World')):
