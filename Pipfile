@@ -5,9 +5,11 @@ name = "pypi"
 
 [packages]
 grpcio = "*"
-grpcio_tools = "*"
+
 
 [dev-packages]
+grpcio_tools = "*"
+grpcio-testing = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-xdist = "*"

@@ -5,7 +5,7 @@ from grpc_in_the_snake_pit import helloworld_pb2
 from grpc_in_the_snake_pit import helloworld_pb2_grpc
 
 # Implement the service
-class Greeter(helloworld_pb2_grpc.GreeterServicer):
+class GreeterService(helloworld_pb2_grpc.GreeterServicer):
 
     def SayHello(self, request, context):
         print(f"Got call SayHello(\"{request.name}\"). Return: \"Hello, {request.name}!\"")
@@ -14,7 +14,7 @@ class Greeter(helloworld_pb2_grpc.GreeterServicer):
 # Create a gRPC server
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    helloworld_pb2_grpc.add_GreeterServicer_to_server(Greeter(), server)
+    helloworld_pb2_grpc.add_GreeterServicer_to_server(GreeterService(), server)
     server.add_insecure_port('[::]:50051')
     server.start()
     print("Server started. Listening...")
